@@ -20,6 +20,7 @@ export class AppComponent {
     const sum = this.sumAges(this.animal.age, anotherAnimal.age);
     console.log(`La suma de edades es: ${sum}`);
 
+    // Pa verificar si es mayor o menor el animal (con el León)
     const adultAnimal: boolean = this.isAdult(this.animal);
     if (!adultAnimal) {
       console.log(`El ${this.animal.name} es un menorsito`);
@@ -31,10 +32,10 @@ export class AppComponent {
     console.log(`Lista de nombres: ${this.listNames(animalList)}`);
 
     // Parte de visitantes
-    const visitantes = [10, 55, 30, 70];
-    console.log(`Visitantes duplicados: ${this.duplyVisitors(visitantes)}`);
-    console.log(`Visitantes filtrados (más de 50): ${this.filterVisitors(visitantes)}`);
-    console.log(`Total de visitantes: ${this.totalVisitors(visitantes)}`);
+    const visitors = [10, 55, 30, 70];
+    console.log(`Visitantes duplicados: ${this.duplyVisitors(visitors)}`);
+    console.log(`Visitantes filtrados (más de 50): ${this.filterVisitors(visitors)}`);
+    console.log(`Total de visitantes: ${this.totalVisitors(visitors)}`);
 
     this.saveVisitors(40);
     this.saveVisitors(65);
